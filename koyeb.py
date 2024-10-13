@@ -148,7 +148,7 @@ if __name__ == '__main__':
     time.sleep(delay_sec)
     i = 0
     if 'KOY_EB' in os.environ:
-        users = os.environ['KOY_EB'].split('&')
+        users = os.environ['KOY_EB'].split('|||')
         for x in users:
             i += 1
             name, pwd = x.split('-')
